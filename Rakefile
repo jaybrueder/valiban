@@ -1,8 +1,20 @@
+# encoding: UTF-8
 require 'rubygems'
-gem 'rspec', '>= 1.2.4'
-require 'spec/rake/spectask'
-
-Spec::Rake::SpecTask.new do |t|
-  t.libs << 'lib'
-  t.spec_opts = ["--color" ]
+begin
+  require 'bundler/setup'
+rescue LoadError
+  puts 'You must `gem install bundler` and `bundle install` to run rake tasks'
 end
+
+require 'bundler'
+Bundler::GemHelper.install_tasks
+
+require 'rake'
+require 'rspec/core/rake_task'
+
+desc "Run Specs"
+RSpec::Core::RakeTask.new(:spec) do |t|
+  t.rspec_opts = %w[--color]
+end
+
+task :default => [:spec]
