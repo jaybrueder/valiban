@@ -1,6 +1,6 @@
-module Iban
+module IBAN
 
-  class Iban
+  class IBAN
     # IBAN logic goes here
   end
 
