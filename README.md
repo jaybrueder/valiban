@@ -16,17 +16,17 @@ You'll find the [source code](http://github.com/iulianu/iban-tools) on Github.
 
 ### Get the bank code number
 
-  Valiban::IBAN.get_bank_code_number?("AT754805700005040015")
+  Valiban::IBAN.get_bank_code_number("AT754805700005040015")
   => "48057"
 
 ### Get the bank account number
 
-  Valiban::IBAN.get_bank_account_number?("AT754805700005040015")
+  Valiban::IBAN.get_bank_account_number("AT754805700005040015")
   => "00005040015"
 
 ### Get the country code
 
-  Valiban::IBAN.get_country_code?("AT754805700005040015")
+  Valiban::IBAN.get_country_code("AT754805700005040015")
   => "AT"
 
 
