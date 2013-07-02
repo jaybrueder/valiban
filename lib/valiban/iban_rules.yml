@@ -1,11 +1,11 @@
-'AT':
+at:
   # Austria
   control_number_length: 2
-  bank_number_length: 5
+  bank_code_number_length: 5
   bank_account_number_length: 11
 
-'DE':
+de:
   # Germany
   control_number_length: 2
-  bank_number_length: 8
+  bank_code_number_length: 8
   bank_account_number_length: 10
