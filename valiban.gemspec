@@ -17,4 +17,6 @@ Gem::Specification.new do |s|
   ]
   s.homepage    =
     'https://github.com/jaybrueder/valiban'
+
+  s.add_development_dependency "rspec", "~> 2.13.0"
 end
