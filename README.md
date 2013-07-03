@@ -8,27 +8,33 @@ You'll find the [source code](http://github.com/iulianu/iban-tools) on Github.
 
 ## INSTALLATION
 
-  gem install valiban
+```ruby
+gem install valiban
+```
 
 ## USAGE
 
-  require 'valiban'
+```ruby
+require 'valiban'
+```
 
 ### Get the bank code number
 
-  Valiban::IBAN.get_bank_code_number("AT754805700005040015")
-  => "48057"
+```ruby
+Valiban::IBAN.get_bank_code_number("AT754805700005040015") => "48057"
+```
 
 ### Get the bank account number
 
-  Valiban::IBAN.get_bank_account_number("AT754805700005040015")
-  => "00005040015"
+```ruby
+Valiban::IBAN.get_bank_account_number("AT754805700005040015") => "00005040015"
+```
 
 ### Get the country code
 
-  Valiban::IBAN.get_country_code("AT754805700005040015")
-  => "AT"
-
+```ruby
+Valiban::IBAN.get_country_code("AT754805700005040015") => "AT"
+```
 
 ## Future
 
